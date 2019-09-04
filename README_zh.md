@@ -8,6 +8,8 @@ remuire 是一款 Nodejs 运行时的 mock 工具，它扩展了模块的 requir
 $ npm install --save-dev remuire
 ```
 
+> Node.js >= 10.12.0
+
 ## 使用
 
 ```js

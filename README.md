@@ -6,6 +6,7 @@ Remuire is a Node.js Runtime mock utility that extends the require method of a m
 ```bash
 $ npm install --save-dev remuire
 ```
+> Node.js >= 10.12.0
 
 ## Usage
 
