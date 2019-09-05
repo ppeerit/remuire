@@ -4,7 +4,7 @@
   "description": "mock require",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "keywords": [
     "mock",
@@ -15,6 +15,6 @@
   "author": "Chanze Zewail",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^24.9.0"
+    "ava": "^2.3.0"
   }
 }
