@@ -14,8 +14,12 @@ $ npm install --save-dev remuire
 
 ```js
 // a.test.js
-const mock = require('remuire')(module)
-mock('../src/a.js', './mock/a.js')
+const remuire = require('remuire')(module)
+// mock  src/a.js ===>>>>>> mock/a.js
+remuire.mock('../src/a.js', './mock/a.js')
+
+// 恢复所有模块
+remuire.revover()
 
 ```
 

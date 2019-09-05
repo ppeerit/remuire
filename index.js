@@ -14,12 +14,17 @@ module.exports = function (_module) {
     return _require.call(this, id)
   }
 
-  return function (source, dist) {
-    const sourcePath = __require__.resolve(source)
-    const distTarget = __require__(dist)
-    if (!mocks.has(sourcePath)) {
-      mocks.set(sourcePath, distTarget)
+  return {
+    mock(source, dist) {
+      const sourcePath = __require__.resolve(source)
+      const distTarget = __require__(dist)
+      if (!mocks.has(sourcePath)) {
+        mocks.set(sourcePath, distTarget)
+      }
+      return distTarget
+    },
+    recover() {
+      mocks.clear()
     }
-    return distTarget
   }
 }
