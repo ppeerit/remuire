@@ -16,9 +16,6 @@ const remuire = require('remuire')(module)
 // mock  src/a.js ===>>>>>> mock/a.js
 remuire.mock('../src/a.js', './mock/a.js')
 
-// recover all mock modules
-remuire.revover()
-
 ```
 
 > You need to mock the module before it is referenced
