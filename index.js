@@ -12,7 +12,7 @@ MODULE.prototype.require = function (id = '') {
   }
   return _require.call(this, id)
 }
-
+// 
 module.exports = function (_module) {
   const __require__ = MODULE.createRequireFromPath(_module.filename)
   return {
