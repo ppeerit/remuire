@@ -3,7 +3,7 @@ const MODULE = require('module');
 const mocks = new Map()
 
 const _require = MODULE.prototype.require
-// require
+
 MODULE.prototype.require = function (id = '') {
   const newRequire = MODULE.createRequireFromPath(this.filename)
   const targetPath = newRequire.resolve(id)
